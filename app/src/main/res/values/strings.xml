@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">AVIV</string>
+    <string name="bedrooms">Bedrooms: %1$s</string>
+    <string name="rooms">Rooms: %1$s</string>
+    <string name="area">Area: %1$s</string>
+    <string name="reload">Reload</string>
+    <string name="loading">Loading...</string>
+    <string name="offer_type">Offer type: %1$s</string>
+    <string name="professional">Professional: %1$s</string>
+    <string name="price">Price: %1$s</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="image_of_in">Image of %1$s in %2$s</string>
 </resources>

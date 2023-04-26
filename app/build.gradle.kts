@@ -57,6 +57,7 @@ dependencies {
     //region AndroidX
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
+    implementation(libs.lifecycle.compose)
     //endregion
 
     //region Compose
@@ -76,9 +77,14 @@ dependencies {
 
     //region Network
     implementation(libs.ktor.client.core)
-    implementation(libs.ktor.client.cio)
+    implementation(libs.ktor.client.okhttp)
     implementation(libs.ktor.client.json)
+    implementation(libs.ktor.client.logging)
     implementation(libs.serialization)
+    implementation(libs.ktor.client.content.negotiation)
+
+    //image loader
+    implementation(libs.glide.compose)
     //endregion
 
     //region Test
@@ -87,6 +93,12 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(platform(libs.compose.bom))
     androidTestImplementation(libs.ui.test.junit4)
+    testImplementation(libs.coroutines.test)
+    androidTestImplementation(libs.coroutines.test)
+    androidTestImplementation(libs.koin.test)
+    implementation(libs.test.core) {
+        isTransitive = false
+    }
     //endregion
 
     //region Tooling

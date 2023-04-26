@@ -1,5 +1,5 @@
 [versions]
-agp = "8.2.0-alpha01"
+agp = "8.1.0-beta01"
 kotlin = "1.8.10"
 core-ktx = "1.10.0"
 junit = "4.13.2"
@@ -12,6 +12,8 @@ koin = "3.4.0"
 ktor = "2.2.4"
 kotlin-serialization = "1.5.0"
 coroutines = "1.6.4"
+glide-compose = "1.0.0-alpha.3"
+test-core = "1.5.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -31,11 +33,19 @@ material3 = { group = "androidx.compose.material3", name = "material3" }
 koin = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
 koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
 koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+koin-test = { group = "io.insert-koin", name = "koin-test", version.ref = "koin" }
 ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
 ktor-client-cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor" }
 ktor-client-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
+ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
 serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlin-serialization" }
 coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+lifecycle-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle-runtime-ktx" }
+glide-compose = {group = "com.github.bumptech.glide", name = "compose", version.ref = "glide-compose"}
+test-core = {group = "androidx.test", name = "core", version.ref = "test-core"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
