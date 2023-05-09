@@ -27,11 +27,11 @@ But if there will be further development, one way of modularisation would be:
   For only one feature structure could look like this:
 ```mermaid
 flowchart TD
-    A[App]
-    B[Network]
-    C[Design]
-    D[Feature 1 API]
-    E[Feature 2 API]
+    A{App}
+    B([Network])
+    C([Design])
+    D(Feature 1 API)
+    E(Feature 2 API)
     F[Feature 1 Implementation]
     G[Feature 2 Implementation]
 
